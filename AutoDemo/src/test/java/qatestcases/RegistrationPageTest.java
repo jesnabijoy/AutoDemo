@@ -75,11 +75,17 @@ public class RegistrationPageTest extends TestBase {
 	  contains("This country requires you to choose a State.")); }
 	 
 	  
-	  @Test public void UserResgistrationTest() { hp.clickSigninbtn();
-	  lp.clickcreateaccountbtn(); rp.UserReg();
+	  @Test(priority = 1)
+	  public void UserResgistrationTest() { 
+	  hp.clickSigninbtn();
+	  lp.clickcreateaccountbtn(); 
+	  rp.UserReg();
 	  Assert.assertEquals(driver.getTitle(), "My account - My Store"); }
 	 
 	
-	  @AfterMethod public void teardown() { driver.quit(); }
+	  @AfterMethod 
+	  public void teardown() {
+		  driver.quit(); 
+		 }
 	 
 }

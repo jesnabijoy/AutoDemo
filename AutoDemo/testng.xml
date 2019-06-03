@@ -4,6 +4,9 @@
   <test name="Test">
     <classes>
       <class name="qatestcases.HomePageTest"/>
+      <class name="qatestcases.CartPageTest"/>
+      <class name="qatestcases.RegistrationPageTest"/>
+      <class name="qatestcases.LoginPageTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
